@@ -16,7 +16,6 @@ body {
   min-height: 100vh;
   font-family: 'Lobster Two', cursive;
   color: #fff;
-  min-width: 450px;
 }
 .header {
   display: -webkit-box;
