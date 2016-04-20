@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster+Two");
+
+body
+  background-color #222
+
+.container
+  display flex
+  flex-direction column
+  background-color #222
+  min-height 100vh
+  font-family: 'Lobster Two', cursive;
+  color white
+  min-width 450px
+
+.header
+  display flex
+  flex-direction row
+  background-color #222
+  justify-content center
+  align-items center
+  font-size responsive 2rem 4rem
+  padding-top 1rem
+
+.header h1
+  text-align center
+  margin 0
+
+.timerControls
+  margin-top 2rem
+  display flex
+  flex-direction row
+  justify-content center
+  align-items center
+
+  @media screen and (max-width: 750px)
+    flex-direction column
+
+.controlTitle
+  font-size responsive 2rem 2.5rem
+  margin-bottom 0.5rem
+  display flex
+  justify-content center
+
+.workControlCont,  .restControlCont
+  display flex
+  justify-content center
+  flex-direction column
+  margin-bottom 2rem
+  padding-left 1rem
+  padding-right 1rem
+
+  @media screen and (max-width: 750px)
+    width 100%
+    margin-bottom 3rem
+    padding 0 rem
+
+.workControls, .restControls
+  display flex
+  flex-direction row
+  justify-content center
+  align-items center
+
+.controlTimerText
+  margin-left 0.5rem
+  margin-right 0.5rem
+  font-size responsive 2rem 3rem
+  width 135px
+  text-align center
+
+.controlTimerButton
+  font-size 3rem
+  border-radius 50%
+  width 3.5rem
+  height 3.5rem
+  border-style none
+  outline none
+  font-size responsive 2rem 3rem
+  line-height 1rem
+
+.controlTimerButton:hover
+  cursor pointer
+
+.controlTimerButton:focus
+  outline:none
+
+::-moz-focus-inner
+  border:0
+
+.tomatoImage
+  margin-top 2rem
+  position: relative;
+  text-align: center;
+  height: 160px;
+
+  @media screen and (max-width: 750px)
+    margin-top 0rem
+
+.tomatoContainer
+  height: 100%;
+
+.greenTomatoCont
+  text-align: center;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+
+.redTomatoCont
+  position absolute
+  text-align: center;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+
+.active
+  z-index 1
+
+.mainTimer
+  display flex
+  justify-content center
+  align-items center
+  margin-top 3rem
+  height 180px
+  margin-bottom 2rem
+
+.maintTimerCont
+  padding-top 50px
+  padding-bottom 50px
+  display flex
+  justify-content center
+  align-items center
+  height 100%
+
+  @media screen and (max-width: 750px)
+    margin-top 0rem
+
+.start
+  display flex
+  justify-content center
+  align-items center
+  width 10rem
+  height 10rem
+  border-radius 50%
+  border-style none
+  outline none
+  font-size 3rem
+  background-color white
+  color black
+  font-family: 'Lobster Two', cursive;
+
+.start:hover
+  cursor pointer
+
+.mainTimerText
+  width 135px
+  text-align center
+  user-select: none;
+
+.mainTimerText:hover
+  cursor pointer
+
+.timerOuter
+  height 10rem
+  width 10rem
+  background-color white
+  border-radius 50%
+  border 2px solid white
+  display flex
+  align-items center
+  justify-content center
+  transition width 0.3s, height 0.3s, border 0.3s
+
+.timerOuterAfter
+  width 10.5rem
+  height 10.5rem
+  background-color #222
+
+.timerOuterBefore
+  height 10rem
+  width 10rem
+  background-color #222
+  border-color #222
