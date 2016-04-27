@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
   var gong = 'https://drive.google.com/uc?export=download&id=0B6HE04GYlRT6Q1hOdWJVTWkzSUU';
   var gogong = new Audio(gong);
 
+// object containing timer values and associated methods
+
   var Timer = function() {
     this.TimerOn = false;
     this.work = 60;
@@ -41,6 +43,8 @@ document.addEventListener('DOMContentLoaded', function() {
     };
   };
 
+// switches between red and green svgs
+
   function flipDisplay() {
     MainTimer.togglePhase();
     if (MainTimer.phase) {
@@ -54,6 +58,8 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.active').style.transition = "height " + (MainTimer.counter / 100) * 134 + "s linear";
     document.querySelector('.active').style.height = "0px";
   }
+
+// initiates countdown
 
   function startCountdown() {
     countdown = setInterval(function() {
@@ -70,6 +76,8 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   MainTimer = new Timer();
+
+// button eventlisteners
 
   workPlus.addEventListener('click', function() {
     MainTimer.inc('work');
